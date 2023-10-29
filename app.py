@@ -39,7 +39,7 @@ from cassandra.auth import PlainTextAuthProvider
 logging.info('libraries loaded...')
 
      
-loaded_model = joblib.load('artifacts/mushroom_final_model.pkl')
+loaded_model = joblib.load('mushroom_final_model.pkl')
 logging.info('Model Loaded..')
 
 appilication = Flask(__name__)
@@ -170,6 +170,7 @@ def submit():
      test = pd.DataFrame([data],columns =features)
      logging.info('Data frame created..')
      print(test.shape)   
+  
 
      logging.info('Data sent to model for prediction..')
      y_pred = loaded_model.predict(test)
