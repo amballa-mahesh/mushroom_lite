@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    input[type=text], select {
+      width: 8%;
+      padding: 5px 10px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 10%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    </style>
+  <body>
+<h2>Mushroom_prediction</h2>
+<h3>Please fill the required feilds..</h3>
+
+
+<form action="/submit" method = 'post'>
+    <label for="cap-color">cap-color:</label><tr>
+    <select id="cap-color" name ='cap-color'><tr>
+      <option value="n">brown</option>
+      <option value="">others</option>
+      </select>&ensp;&ensp;&ensp;
+
+    <label for="odor">odor:</label><tr>
+    <select id="odor" name ='odor'><tr>
+      <option value="c">creosote</option>
+      <option value="f">foul</option>
+      <option value="l">anise</option>
+      <option value="m">musty</option>
+      <option value="n">none</option>
+      <option value="p">pungent</option>
+      <option value="s">spicy</option>
+      <option value="y">fishy</option>
+    </select>&ensp;&ensp;&ensp;
+
+    <label for="gill-spacing">gill-spacing:</label><tr>
+    <select id="gill-spacing" name ='gill-spacing'>
+      <option value="w">crowded</option>
+      <option value="">others</option>
+   </select>&ensp;&ensp;&ensp;
+
+    <label for="gill-size">gill-size:</label><tr>
+    <select id="gill-size" name ='gill-size'>
+      <option value="n">narrow</option>
+      <option value="">broad</option>
+   </select>&ensp;&ensp;&ensp;
+
+    <label for="gill-color">gill-color:</label><tr>
+    <select id="gill-color" name ='gill-color'>
+      <option value="n">brown</option>
+      <option value="w">white</option>
+      <option value="">others</option>	
+   </select>&ensp;&ensp;&ensp;
+
+    <label for="stalk-shape">stalk-shape:</label><tr>
+    <select id="stalk-shape" name ='stalk-shape'>
+      <option value="t">tapering</option>
+      <option value="">enlarging</option>
+   </select><br><br>
+
+    <label for="stalk-surface-above-ring">stalk-surface-above-ring:</label><tr>
+    <select id="stalk-surface-above-ring" name ='stalk-surface-above-ring'>
+      <option value="k">sliky</option>
+      <option value="s">smooth</option>
+      <option value="">others</option>
+   </select>&ensp;&ensp;&ensp;
+
+    <label for="stalk-surface-below-ring">stalk-surface-below-ring:</label><tr>
+    <select id="stalk-surface-below-ring" name ='stalk-surface-below-ring'>
+      <option value="y">scaly</option>
+      <option value="s">smooth</option>
+      <option value="">others</option>
+   </select>&ensp;&ensp;&ensp;
+
+    <label for="stalk-color-above-ring">stalk-color-above-ring:</label><tr>
+    <select id="stalk-color-above-ring" name ='stalk-color-above-ring'>
+      <option value="o">orange</option>
+      <option value="">others</option>
+   </select>&ensp;&ensp;&ensp;
+
+    <label for="stalk-color-below-ring">stalk-color-below-ring:</label><tr>
+    <select id="stalk-color-below-ring" name ='stalk-color-below-ring'>
+      <option value="y">yellow</option>
+      <option value="w">white</option>
+      <option value="">others</option>
+   </select><br><br>
+
+    <label for="ring-number">ring-number:</label><tr>
+    <select id="ring-number" name ='ring-number'>
+      <option value="t">two</option>
+      <option value="">others</option>
+   </select>&ensp;&ensp;&ensp;  
+
+    <label for="ring-type">ring-type:</label><tr>
+    <select id="ring-type" name ='ring-type'>
+      <option value="f">flaring</option>
+      <option value="l">large</option>
+      <option value="p">pendant</option>
+      <option value="">others</option>
+   </select>&ensp;&ensp;&ensp;  
+
+    <label for="spore-print-color">spore-print-color:</label><tr>
+    <select id="spore-print-color" name ='spore-print-color'>
+      <option value="k">black</option>
+      <option value="n">brown</option>
+      <option value="r">green</option>
+      <option value="">others</option>
+   </select>&ensp;&ensp;&ensp; 
+
+    <label for="population">population:</label><tr>
+    <select id="population" name ='population'>
+      <option value="v">several</option>
+      <option value="n">numerous</option>
+      <option value="">others</option>
+   </select>&ensp;&ensp;&ensp;  
+
+    <label for="habitat">habitat:</label><tr>
+    <select id="habitat" name ='habitat'>
+      <option value="p">paths</option>
+      <option value="u">urban</option>
+      <option value="w">waste</option>
+      <option value="">others</option>
+   </select><br><br>
+   <input type ='submit' value ='Submit'>
+
+</form>
+
+
+</body>
+</html>
