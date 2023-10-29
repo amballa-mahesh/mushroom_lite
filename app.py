@@ -4,13 +4,9 @@ import joblib
 from joblib import dump, load
 import pandas as pd
 import logging
-import mysql.connector
-import cassandra
+
 from datetime import datetime
 from src.logger import logging
-
-from cassandra.cluster import Cluster
-from cassandra.auth import PlainTextAuthProvider
 
 # cloud_config= {
 #   'secure_connect_bundle':'secure-connect-mushroomdb.zip'
