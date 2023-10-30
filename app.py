@@ -161,7 +161,7 @@ def submit():
           elif habitat == 'w':
                data[32] = 1
 
-     print(len(data))
+     #print(len(data))
      logging.info('Date Captured from web api..')
      test = pd.DataFrame([data],columns =features)
      logging.info('Data frame created..')
